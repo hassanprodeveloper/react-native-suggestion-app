@@ -14,7 +14,7 @@ import Navigations from './src/Navigation/Navigations';
 const App = () => {
   return (
     <Provider store={store}>
-      <StatusBar backgroundColor="#fff" barStyle="dark-content" />
+      <StatusBar backgroundColor="#2A3D8E" barStyle="light-content" />
       <Navigations />
     </Provider>
   );

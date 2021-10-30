@@ -34,8 +34,12 @@ const SplashScreen = ({navigation, initilizeTodos}) => {
   return (
     <>
       <View style={styles.container}>
-        <Image source={require('../Assets/hado.jpg')} style={styles.logo} />
-        <DotsLoader color="#0f0f0f" />
+        <Image
+          source={require('../Assets/suggest-logo.png')}
+          style={styles.logo}
+        />
+        {/* <Text style={styles.title}>Suggest</Text> */}
+        <DotsLoader size={13} color="#2A3D8E" />
       </View>
     </>
   );
@@ -55,7 +59,16 @@ const styles = StyleSheet.create({
   },
   logo: {
     height: 150,
-    width: '95%',
+    width: '100%',
     resizeMode: 'contain',
+    marginBottom: 30,
   },
+  // title: {
+  //   backgroundColor: 'red',
+  //   width: '100%',
+  //   textAlign: 'center',
+  //   fontSize: 25,
+  //   fontWeight: 'bold',
+  //   marginBottom: 20,
+  // }
 });
