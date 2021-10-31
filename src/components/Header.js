@@ -1,13 +1,13 @@
 import React from 'react';
 import {StyleSheet, View, Text} from 'react-native';
-import Icon from 'react-native-vector-icons/Ionicons';
+import Ionicons from 'react-native-vector-icons/Ionicons';
 import {windowWidth, windowHeight} from '../Assets/Dimensions';
 
 const Header = ({navigation, title, iconType, ...rest}) => {
   return (
     <>
       <View style={styles.HeaderCont}>
-        <Icon
+        <Ionicons
           style={styles.drawericon}
           name={iconType}
           {...rest}
